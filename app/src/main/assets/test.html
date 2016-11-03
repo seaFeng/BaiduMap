@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function login(){
+    var name2 = android.getGps();
+    window.alert(name2);
+}
+function toMap() {
+    android.toMapView();
+}
+function toIm() {
+    android.toIM();
+}
+</script>
+</head>
+<body>
+<button class='denglu' onclick="login()">获取地图信息</button>
+<button onclick="toMap()">调转到地图视图中</button>
+<button onclick="toIm()">跳转到IM</button>
+</body>
+</html>

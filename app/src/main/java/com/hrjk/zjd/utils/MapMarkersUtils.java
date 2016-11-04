@@ -121,15 +121,7 @@ public class MapMarkersUtils  {
         }
     }
 
-   /* *//**
-     *  导航监听器。
-     *//*
-    public interface GuideListenner {
-        *//**
-         *  开始导航
-         *//*
-        public abstract void goDestination();
-    }*/
+
 
     public void routeplanToNavi(LatLng sLatLng,LatLng eLatLng) {
         BNRoutePlanNode sNode = new BNRoutePlanNode(sLatLng.longitude, sLatLng.latitude, "当前位置", null, BNRoutePlanNode.CoordinateType.BD09LL);
@@ -139,7 +131,7 @@ public class MapMarkersUtils  {
         public static final int	ROUTE_PLAN_MOD_MIN_DIST	4                   // 少走高速
         public static final int	ROUTE_PLAN_MOD_MIN_TIME	2                   // 高速优先
         public static final int	ROUTE_PLAN_MOD_MIN_TOLL	8                   // 少收费。
-        public static final int	ROUTE_PLAN_MOD_RECOMMEND	1*/             // 推荐
+        public static final int	ROUTE_PLAN_MOD_RECOMMEND	*/             // 推荐
 
         if (sNode != null && eNode != null) {
             List<BNRoutePlanNode> list = new ArrayList<>();

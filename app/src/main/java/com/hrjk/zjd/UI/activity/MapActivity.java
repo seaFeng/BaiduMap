@@ -75,23 +75,10 @@ public class MapActivity extends AppCompatActivity {
         markersUtils.creatMarker(new LatLng(39.915160800132085,116.40386525193937),HOME);
         markersUtils.creatMarker(new LatLng(40.057009624099436,116.30784537597782),ADDRESS);
 
-        // 打开log开关
-		//BNOuterLogUtil.setLogSwitcher(true);
 
 		if (initDirs()) {
 			initNavi();
 		}
-        /*markersUtils.registerGuideListenner(new MapMarkersUtils.GuideListenner() {
-            @Override
-            public void goDestination() {
-                if (BaiduNaviManager.isNaviInited()) {
-                    Toast.makeText(MapActivity.this, "开始导航", Toast.LENGTH_SHORT).show();
-                    //routeplanToNavi();
-                }
-            }
-        });*/
-
-
     }
 
 
@@ -101,8 +88,6 @@ public class MapActivity extends AppCompatActivity {
     private void initMap() {
         // 设置地图类型：卫星地图
         mBaiduMap.setMapType(BaiduMap.MAP_TYPE_NORMAL);
-        //mBaiduMap.setTrafficEnabled(true);
-        //mBaiduMap.setBaiduHeatMapEnabled(true);
         mBaiduMap.setMyLocationEnabled(true);
 
         // 是否允许显示方向信息

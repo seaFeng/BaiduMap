@@ -115,7 +115,6 @@ public class MapMarkersUtils  {
 
         @Override
         public void onClick(View v) {
-            //guideListenner.goDestination();
             routeplanToNavi(sLatLng,eLatLng);
             map.hideInfoWindow();
         }

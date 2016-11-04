@@ -51,6 +51,7 @@
             android:process=":remote" />
 
         <activity android:name=".UI.activity.MapActivity"></activity>
+        <activity android:name=".UI.activity.BNDemoGuideActivity"></activity>
     </application>
 
 </manifest>

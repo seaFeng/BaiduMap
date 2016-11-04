@@ -35,6 +35,7 @@ public class MyRoutePlanListener implements BaiduNaviManager.RoutePlanListener {
                 return;
             }
        // }*/
+        Toast.makeText(activity, "开始导航！！", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(activity, BNDemoGuideActivity.class);
         Bundle bundle = new Bundle();
         bundle.putSerializable("routePlanNode", (BNRoutePlanNode) mBNRoutePlanNode);
